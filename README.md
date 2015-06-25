@@ -26,6 +26,12 @@
   * events(?)
 * sign-up page
   * create/style form
+    * name
+    * photo
+    * preferred dog
+    * location
+    * availability
+  * confirmation erb
   * ruby form backend
 * profile layout
   *ruby hooks
