@@ -1,0 +1,17 @@
+/* Navigation Bar */
+nav {
+font-family: font-family: 'Open Sans Condensed', sans-serif;
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+}
