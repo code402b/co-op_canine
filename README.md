@@ -1,6 +1,9 @@
 
 #Sinatra assignment - Co-op Canine
 
+##Objective
+Find someone in your area interested in sharing a dog. You will split all the costs and responspibilties, including the purchase price.
+
 ##Group
 * Anthony McGovern
 * James Middlesmiss
@@ -15,26 +18,3 @@
 * Contact
 * Testimonals
 
-
-##Issues
-* Nav bar
-* footer
-* static pages
-  * about
-  * contact
-  * testimonals
-  * events(?)
-* sign-up page
-  * create/style form
-    * name
-    * photo
-    * preferred dog
-    * location
-    * availability
-  * confirmation erb
-  * ruby form backend
-* profile layout
-  *ruby hooks
-*browse
-  *ruby hooks
-* mandrill setup
