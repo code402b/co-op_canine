@@ -14,5 +14,13 @@ sending = m.messages.send message
 puts sending
 
 get '/' do
+  @stylesheet = 'style/home.css'
   erb :home
+  
+end
+
+get '/about' do
+  @stylesheet = 'style/about.css'
+ erb :about
+
 end

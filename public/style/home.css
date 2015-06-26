@@ -1,0 +1,6 @@
+body {
+  background: url("../img/dog2.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom:0;
+  background-position: top;
+}
