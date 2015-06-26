@@ -1,0 +1,28 @@
+
+def users
+
+users_array = [
+    {
+      first_name:     "Anthony",
+      last_name:      "McGovern",
+      username:       "BrooklynDogSeeker",
+      user_img:       "img/am.jpg",
+      user_status:    "currently hoping to buy a pure bred Westie",
+      dog_pref:       "Terrier",
+      location:       "Bushwick, Brooklyn",
+      schedule:       "not into morning, available late night",
+    },
+
+    {
+      first_name:     "Gwen",
+      last_name:      "Larson",
+      username:       "JerseyGirl",
+      user_img:       "img/gwen.jpg",
+      user_status:    "currently hoping to move out of New Jersey",
+      dog_pref:       "Retriever",
+      location:       "Somewhere, New Jersey",
+      schedule:       "up early, but in New Jersey",
+    }
+  ]
+
+end
