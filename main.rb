@@ -27,5 +27,6 @@ end
 
 get '/profile' do
   @stylesheet = 'style/profile.css'
+  @zip = 10011
   erb :profile
 end

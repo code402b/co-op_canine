@@ -1,0 +1,64 @@
+body {
+  background-color: #444444;
+  font-family: 'Quicksand', sans-serif;
+}
+.profile {
+  width: 900px;
+  height: 750px;
+  background-color: #428080;
+  margin: 200px auto 0px auto;
+  border-radius: 10px;
+}
+.profile img {
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 10px;
+  float: left;
+  margin-bottom: 30px;
+}
+.info {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 130px;
+  text-align: center;
+}
+.info h2 {
+  font-size: 50px;
+}
+.info p {
+  padding-top: 20px;
+}
+.info hr {
+  width: 70%;
+}
+footer {
+  margin-top: 70px;
+}
+.info span {
+  font-weight: 300;
+}
+ #mapcanvas {
+  width: 50%;
+  height: 350px;
+  /*margin-top: 20px;*/
+  margin-left: 30px;
+  display:inline;
+}
+#aboutme{
+  display:inline;
+  float: right;
+  width: 400px;
+  margin-top: 150px;
+  margin-right: 70px;
+}
+
+
+
+
+
+
+
+
+
