@@ -24,3 +24,8 @@ get '/about' do
  erb :about
 
 end
+
+get '/profile' do
+  @stylesheet = 'style/profile.css'
+  erb :profile
+end
