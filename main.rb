@@ -1,3 +1,4 @@
+require 'sinatra'
 require 'mandrill'
 ENV['MANDRILL_APIKEY']
 m = Mandrill::API.new
@@ -11,3 +12,7 @@ message = {
 }
 sending = m.messages.send message
 puts sending
+
+get '/' do
+  erb :home
+end
