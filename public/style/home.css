@@ -5,3 +5,18 @@ body {
   background-position: top;
   max-width: 100vw;
 }
+@media (max-width: 900px) {
+  .welcome {
+    width: 300px;
+  }
+}
+@media (max-width: 1200px){
+  .welcome{
+    width: 500px;
+  }
+}
+@media (max-width: 600px){
+  .welcome{
+    width: 300px;
+  }
+}

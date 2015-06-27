@@ -1,0 +1,29 @@
+<div id="wrapper">
+    <h1>Browse Users</h1>
+    
+    <% @users.each do |user| %>
+
+    <div class="user_profile">
+      
+      <div class="image_wrapper">
+        <img class="thumb" src=<%=user["user_img"]%>>
+      </div>
+
+      <div class="user_text">
+        <h2 class="username"><%=user["username"]%></h2>
+        <div class="user_status"><%=user["user_status"]%></div>
+      </div>
+
+      <div class="user_info">
+        <ul>
+          <li>Preferred Dog: <span><%=user["dog_pref"]%></span></li>
+          <li>Schedule: <span><%=user["schedule"]%></span></li>
+          <li>Location: <span><%=user["location"]%></span></li>
+        </ul>
+      </div>
+    </div>  <!-- closes .user_profile -->
+
+    <% end %>
+
+  </div>  <!-- closes #wrapper -->
+

@@ -3,8 +3,7 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 .profile {
-  width: 900px;
-  height: 750px;
+  max-width: 900px;
   background-color: #428080;
   margin: 200px auto 0px auto;
   border-radius: 10px;
@@ -13,16 +12,17 @@ body {
   width: 300px;
   height: 300px;
   margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 120px;
   border-radius: 10px;
   float: left;
-  margin-bottom: 30px;
 }
 .info {
   display: inline-block;
   margin-top: 40px;
-  margin-left: 130px;
+  float: left;
+  margin-left: 100px;
   text-align: center;
+  margin-bottom: 85px;
 }
 .info h2 {
   font-size: 50px;
@@ -42,16 +42,27 @@ footer {
  #mapcanvas {
   width: 50%;
   height: 350px;
-  /*margin-top: 20px;*/
-  margin-left: 30px;
+  margin-left: 60px;
   display:inline;
 }
+.everything {
+  border: 1px solid blue;
+}
 #aboutme{
-  display:inline;
+  /*margin-top: 50px;*/
   float: right;
   width: 400px;
-  margin-top: 150px;
-  margin-right: 70px;
+  margin-right: 40px;
+  line-height: 150%;
+  padding: 1em 1em;
+  margin-left: 20px;
+  /*text-align: justify;*/
+}
+#aboutme h2{
+  font-size: 30px;
+  text-align: center;
+  line-height: 2em;
+
 }
 
 

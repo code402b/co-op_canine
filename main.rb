@@ -11,22 +11,43 @@ message = {
  :from_email=>"sender@yourdomain.com"
 }
 sending = m.messages.send message
-puts sending
+# puts sending
+
+require './user_array.rb'
 
 get '/' do
   @stylesheet = 'style/home.css'
   erb :home
-  
 end
 
 get '/about' do
-  @stylesheet = 'style/about.css'
- erb :about
+  @stylesheet = 'style/home.css'
+ erb :home
 
 end
+
 
 get '/profile' do
   @stylesheet = 'style/profile.css'
-  @zip = 10011
+  @zip = 90001
   erb :profile
 end
+
+get '/browse' do
+  @stylesheet = 'style/browse.css'
+
+  def users 
+  # return value should be the array of ruby hashes
+  # parse json file into ruby array
+
+  file = File.open("users.json", "r")
+  contents = file.read
+  users = JSON.parse(contents)
+
+  end
+
+  @users = users
+
+  erb :browse
+end
+

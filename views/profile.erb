@@ -1,26 +1,30 @@
 <div class="profile">
-  <img src="img/dog1.jpg">
   <div class="info">
     <h2>LittePuppy</h2>
     <hr color="black">
     <!-- <h2><%= @username %></h2> -->
-    <p><span>Email:</span> littlepuppy@gmail.com</p>
+    <p><span>First Name:</span> little</p>
     <!-- <p><span>First Name:</span> <%= @first_name %> </p> -->
-    <p><span>Age:</span> 25</p>
+    <p><span>Last Name:</span> puppy</p>
+    <p><span>Location:</span> Puppyland, Brooklyn</p>
     <!-- <p><span>Age:</span> <%= @age %> </p> -->
-    <p><span>Current Pet Situation: </span>3 Cats, 2 Fish</p>
+    <p><span>Schedule: </span>Busy all day er' day</p>
     <!-- <p><span>Current Pet Situation:</span> <%= @cps %> </p> -->
-    <p><span>Dog Size Desired: </span> Big Dog</p>
+    <p><span>Dog Preference: </span> Big Dog</p>
   </div><!-- end div .info -->
-<div id="aboutme">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </div><!-- div #aboutme -->
+  <div id="everything">
+    <img src="img/dog1.jpg">
+    <div id="aboutme">
+      <h2>About Me:</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div><!-- div #aboutme -->
    
-  <div id="mapcanvas">
-    <iframe width="350" height="350" frameborder="0" src=<%="https://www.google.com/maps/embed/v1/place?q=New%20York%2C%20NY%20#{@zip}%2C%20United%20States&key=AIzaSyAkt_wksosHgKyw-1zEMkHEguPP47mEWPA" %>></iframe>
-  </div><!-- end div #mapcanvas -->
-
+      <div id="mapcanvas">
+        <iframe width="350" height="350" frameborder="0" src=<%="https://www.google.com/maps/embed/v1/place?q=#{@zip}&key=AIzaSyAkt_wksosHgKyw-1zEMkHEguPP47mEWPA" %>></iframe>
+      </div><!-- end div #mapcanvas -->
+    </div>
+  <br clear="all">
 </div><!-- end div .profile -->
 
 
