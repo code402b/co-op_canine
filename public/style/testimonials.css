@@ -1,7 +1,8 @@
 body {
   background-color: #444444;
-  font-family: 'Quicksand', sans-serif; 
-  max-width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+  width:1200px; 
+  /*max-width: 100vw;*/
 
 }
 h3 {
@@ -9,15 +10,17 @@ h3 {
   text-align: center;
   color: #699A9A;
 }
-.groups {
+.container {
+  width: 95%;
   margin: 0 auto;
-}
-.group1 {
-  margin: 0 auto;
-  width: 1000px;
-  margin-left: 175px;
 
 }
+.testimonials {
+  margin: 0 auto;
+  margin-left: 70px;
+}
+
+
 #line1 {
     width: 70px;
     height: 47px;
@@ -54,8 +57,18 @@ h3 {
 
 /*First set of 3*/
 
+
+.testimonial-box{
+  float: left;
+  width:40%;
+  min-width: 450px;
+  margin: 2%;
+
+}
+
 #first{
   float: left;
+  width: 45%;
   margin-left: 20px;
   margin-top: 10px;
   padding-left: 10px;

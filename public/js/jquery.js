@@ -17,16 +17,7 @@ $(document).ready(function(){
             // $('#second').css({'background-color':'#428080','border-radius':'20px','padding':'10px'}),3000;  
             // $('#third').hide().css({'background-color':'#428080','border-radius':'20px','padding':'20px'}).show(3000),3000;  
             // $('#fourth').hide().show(3000).css({'background-color':'#428080','border-radius':'20px','padding':'20px'}),3000;  
-            $('#first').fadeTo(3000, 0.3, 'swing', function(){
-            $(this).css({"background-color":"#428080",'border-radius':'20px'});
-              }).delay(1000).fadeTo('slow', 1);
-            $('#second').fadeTo(3000, 0.3, 'swing', function(){
-            $(this).css({"background-color":"#428080",'border-radius':'20px'});
-              }).delay(1000).fadeTo('slow', 1);
-            $('#third').fadeTo(5000, 0.3, 'swing', function(){
-            $(this).css({"background-color":"#428080",'border-radius':'20px'});
-              }).delay(1000).fadeTo('slow', 1);
-            $('#fourth').fadeTo(5000, 0.3, 'swing', function(){
+            $(".testimonial-box").fadeTo(3000, 0.3, 'swing', function(){
             $(this).css({"background-color":"#428080",'border-radius':'20px'});
               }).delay(1000).fadeTo('slow', 1);
            // $("#first").delay(4000).queue(function() {
