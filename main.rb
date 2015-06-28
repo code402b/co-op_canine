@@ -1,17 +1,17 @@
 require 'sinatra'
-require 'mandrill'
-ENV['MANDRILL_APIKEY']
-m = Mandrill::API.new
-message = {
- :subject=> "Hello from the Mandrill API",
- :from_name=> "Also, James",
- :text=>"Hi message, how are you?",
- :to=>[{:email=> "middlemissj.usa@gmail.com", :name=> "James"}],
- :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
- :from_email=>"sender@yourdomain.com"
-}
-sending = m.messages.send message
-# puts sending
+# require 'mandrill'
+# ENV['MANDRILL_APIKEY']
+# m = Mandrill::API.new
+# message = {
+#  :subject=> "Hello from the Mandrill API",
+#  :from_name=> "Also, James",
+#  :text=>"Hi message, how are you?",
+#  :to=>[{:email=> "middlemissj.usa@gmail.com", :name=> "James"}],
+#  :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
+#  :from_email=>"sender@yourdomain.com"
+# }
+# sending = m.messages.send message
+# # puts sending
 
 require './user_array.rb'
 
@@ -21,9 +21,16 @@ get '/' do
 end
 
 get '/about' do
-  @stylesheet = 'style/about.css'
- erb :about
+  @stylesheet = 'style/home.css'
+ erb :home
 
+end
+
+
+get '/profile' do
+  @stylesheet = 'style/profile.css'
+  @zip = 10011
+  erb :profile
 end
 
 get '/browse' do
@@ -43,3 +50,11 @@ get '/browse' do
 
   erb :browse
 end
+
+get '/testimonial' do
+  @stylesheet = 'style/testimonials.css'
+  erb :testimonal  
+
+end
+
+
