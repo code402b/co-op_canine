@@ -1,17 +1,6 @@
 require 'sinatra'
 require 'mandrill'
-ENV['MANDRILL_APIKEY']
-m = Mandrill::API.new
-message = {
- :subject=> "Hello from the Mandrill API",
- :from_name=> "Also, James",
- :text=>"Hi message, how are you?",
- :to=>[{:email=> "middlemissj.usa@gmail.com", :name=> "James"}],
- :html=>"<html><h1>Hi <strong>message</strong>, how are you?</h1></html>",
- :from_email=>"sender@yourdomain.com"
-}
-sending = m.messages.send message
-# puts sending
+
 
 require './user_array.rb'
 
@@ -42,4 +31,30 @@ get '/browse' do
   @users = users
 
   erb :browse
+end
+
+get '/contact' do
+  erb :contact
+end
+
+post '/contact' do
+  puts params.inspect
+  @username = params['username']
+  @email_addr = params['email_addr']
+  @usr_msg = params["usr_msg"]
+  @confirmation = "<p>Hi!, #{@username} You have requested information about a Co-Owning a Dog on Co-Op Canines</p>"
+  @confirmation = "#{@confirmation}<p> We are glad to see you are interested in our service</p>"
+  @confirmation = "#{@confirmation}<p> One of our staff will look over your information and send you a link with some information about applying</p>"
+  
+mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
+ message = {to: [{"type"  =>"to",
+                  "email" =>"#{@email_addr}",
+                  "name"  =>"#{@username}" }],
+            subject: "confirmation email for Co-Op Canines",
+            from_email: 'middlemissj.usa@gmail.com',
+            html: "#{@confirmation}" 
+           }
+
+puts mandrill.messages.send message
+  erb :contact
 end
