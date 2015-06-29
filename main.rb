@@ -67,6 +67,7 @@ mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
            }
 
 puts mandrill.messages.send message
+  @stylesheet = "style/contact.css"
   erb :contact
 end
 
