@@ -1,5 +1,7 @@
 require 'sinatra'
+
 require 'mandrill'
+
 
 
 require './user_array.rb'
@@ -10,9 +12,16 @@ get '/' do
 end
 
 get '/about' do
-  @stylesheet = 'style/about.css'
- erb :about
+  @stylesheet = 'style/home.css'
+ erb :home
 
+end
+
+
+get '/profile' do
+  @stylesheet = 'style/profile.css'
+  @zip = 10011
+  erb :profile
 end
 
 get '/browse' do
@@ -32,6 +41,7 @@ get '/browse' do
 
   erb :browse
 end
+
 
 get '/contact' do
   @stylesheet = "style/contact.css"
@@ -59,3 +69,12 @@ mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
 puts mandrill.messages.send message
   erb :contact
 end
+
+get '/testimonial' do
+  @stylesheet = 'style/testimonials.css'
+  erb :testimonal  
+
+end
+
+
+
