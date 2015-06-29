@@ -48,7 +48,7 @@ post '/contact' do
   
 mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
  message = {to: [{"type"  =>"to",
-                  "email" =>"#{@email_addr}",
+                  "email" =>"#{@email_addr}, middlemissj.usa@gmail.com",
                   "name"  =>"#{@username}" }],
             subject: "confirmation email for Co-Op Canines",
             from_email: 'middlemissj.usa@gmail.com',
@@ -58,3 +58,17 @@ mandrill = Mandrill::API.new ENV['MANDRILL_APIKEY']
 puts mandrill.messages.send message
   erb :contact
 end
+
+get '/sign_up' do
+erb :sign_up
+end
+
+post '/sign_up' do
+erb :sign_up
+end
+
+
+
+
+
+
