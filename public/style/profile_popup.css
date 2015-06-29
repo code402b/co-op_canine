@@ -1,0 +1,165 @@
+/*layout rules*/
+
+#wrapper {
+  width: 900px;
+  margin: 135px auto 0px auto;
+}
+
+.user_profile {
+  background-color: rgb(105, 154, 154);
+  width: 900px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+.image_wrapper {
+  float: left;
+  height: 100%;
+  width: 160px;
+}
+
+.user_text {
+  float: left;
+  height: 100%;
+  width: 300px;
+}
+
+.user_info {
+  float: left;
+  /*height: 100%;*/
+  width: 400px;
+  padding-left: 20px;
+}
+
+.thumb {
+  border-radius: 50%;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+
+/*style rules*/
+
+#wrapper h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 48px;
+  padding: 30px 0px;
+  /*text-align: center;*/
+}
+
+.username {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
+  padding: 10px;
+  padding-top: 30px;
+
+}
+
+.user_status {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  font-style: italic;
+}
+
+.user_info {
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.user_info li {
+  padding: 12px;
+  font-weight: bold
+}
+
+.user_info li span {
+  font-weight: normal;
+}
+
+/* profile popup */
+
+body {
+  background-color: #444444;
+  font-family: 'Quicksand', sans-serif;
+}
+.profile {
+  max-width: 900px;
+  background-color: #428080;
+  margin: 200px auto 0px auto;
+  border-radius: 10px;
+}
+.profile img {
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
+  /*margin-left: 120px;*/
+  border-radius: 10px;
+  float: left;
+}
+.info {
+  /*display: inline-block;*/
+  /*width: 200px;*/
+  margin-top: 40px;
+  float: left;
+  margin-left: 40px;
+  text-align: center;
+  margin-bottom: 85px;
+}
+.info h2 {
+  font-size: 50px;
+}
+.info p {
+  padding-top: 20px;
+}
+.info hr {
+  width: 70%;
+}
+footer {
+  margin-top: 70px;
+}
+.info span {
+  font-weight: 300;
+}
+ #mapcanvas {
+  width: 50%;
+  height: 350px;
+  margin-left: 20px;
+  /*display:inline;*/
+}
+.everything {
+  border: 1px solid blue;
+}
+#aboutme{
+  /*margin-top: 50px;*/
+  float: right;
+  width: 400px;
+  margin-right: 40px;
+  line-height: 150%;
+  padding: 1em 1em;
+  margin-left: 20px;
+  /*text-align: justify;*/
+}
+#aboutme h2{
+  font-size: 30px;
+  text-align: center;
+  line-height: 2em;
+
+}
+
+/* jquery */
+
+#fadeandscale {
+  transform: scale(0.8);
+}
+.popup_visible #fadeandscale {
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+

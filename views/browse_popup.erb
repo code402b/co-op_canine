@@ -1,0 +1,57 @@
+<div id="wrapper">
+    <h1>Browse Users</h1>
+    
+    <% @users.each do |user| %>
+
+    <div class="user_profile" class="fadeandscale_open">
+      
+      <div class="image_wrapper">
+        <img class="thumb" src=<%=user["user_img"]%>>
+      </div>
+
+      <div class="user_text">
+        <h2 class="username"><%=user["username"]%></h2>
+        <div class="user_status"><%=user["user_status"]%></div>
+      </div>
+
+      <div class="user_info">
+        <ul>
+          <li>Preferred Dog: <span><%=user["dog_pref"]%></span></li>
+          <li>Schedule: <span><%=user["schedule"]%></span></li>
+          <li>Location: <span><%=user["location"]%></span></li>
+        </ul>
+      </div>
+    </div>  <!-- closes .user_profile -->
+    
+    <div id="fadeandscale" class="profile">
+      <div class="info">
+        <h2><%=user["username"]%></h2>
+        <hr color="black">
+        <p><span>First Name:  </span> <%= user["first_name"] %> </p>
+        <p><span>Last Name:   </span> <%= user["last_name"] %></p>
+        <p><span>Location:    </span> <%= user["location"] %></p>
+        <p><span>Age:         </span> <%= user["age"] %> </p>
+        <p><span>Schedule:    </span> <%= user["schedule"] %></p>
+        <p><span>Current Situation:</span> <%= user["user_status"] %></p>
+        <p><span>Dog Preference: </span> <%= user["dog_pref"] %></p>
+      </div><!-- end div .info -->
+
+      <div id="everything">
+        <img src=<%= user["user_img"] %>>
+        <div id="aboutme">
+          <h2>About Me:</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div><!-- div #aboutme -->
+   
+        <div id="mapcanvas">
+          <iframe width="350" height="350" frameborder="0" src=<%="https://www.google.com/maps/embed/v1/place?q=#{user["zipcode"]}&key=AIzaSyAkt_wksosHgKyw-1zEMkHEguPP47mEWPA" %>></iframe>
+        </div><!-- end div #mapcanvas -->
+      </div>
+      <br clear="all">
+    </div><!-- end #profile -->
+
+    <% end %>
+
+  </div>  <!-- closes #wrapper -->
+
