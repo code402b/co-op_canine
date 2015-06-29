@@ -1,18 +1,26 @@
-<div style ="margin-top: 80px">
-  <h1>Contact Us</h1>
+<div id="clear"></div>
+<div class="container">
 
-<p>Are you Interested in getting more information?</p>
-<p>Send us your details, and we will get in contact with you!</p>
-
-<form method="POST" action="/contact">
-  <label for="username">Username</label>
-  <input type="text" name='username'>
-  <label for="email">Email</label>
-  <input type="email" name="email_addr">
-  <textarea name="usr_msg"></textarea>
-
-  <input type="submit">
-</form>
-
-
+    <h3>Are you Interested in getting more information?</h3>
+    <h3>Send us your details, and we will get in contact with you!</h3>
+    <div id="around-form">
+      <form method="POST" action="/contact" class="form">
+        <div id = "username">
+          <p>Username</p>
+          <input type="text" name='username'>
+        </div>
+          </br>
+        <div id="email">
+          <p>Email</p>
+          <input type="email" name="email_addr">
+        </div>
+          </br>
+        <div id="msg">
+          <p>Message</p>
+          <textarea rows="10" cols="20" name="usr_msg"></textarea>
+        </div>
+          </br>
+        <input type="submit">
+      </form>
+    </div>
 </div>

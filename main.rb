@@ -34,6 +34,7 @@ get '/browse' do
 end
 
 get '/contact' do
+  @stylesheet = "style/contact.css"
   erb :contact
 end
 
