@@ -1,4 +1,6 @@
-/*layout rules*/
+/*Browse page */
+
+  /*layout rules*/
 
 #wrapper {
   width: 900px;
@@ -38,7 +40,7 @@
   margin-left: 24px;
 }
 
-/*style rules*/
+  /*style rules*/
 
 #wrapper h1 {
   font-family: 'Quicksand', sans-serif;
@@ -77,37 +79,40 @@
   font-weight: normal;
 }
 
-/* profile popup */
+
+
+/* Profile Popup */
 
 body {
   background-color: #444444;
   font-family: 'Quicksand', sans-serif;
 }
 .profile {
-  max-width: 900px;
+  /*max-width: 900px;*/
   background-color: #428080;
-  margin: 200px auto 0px auto;
+  /*margin: 200px auto 0px auto;*/
   border-radius: 10px;
 }
 .profile img {
   width: 300px;
   height: 300px;
   margin-top: 40px;
-  /*margin-left: 120px;*/
+  margin-right: 20px;
   border-radius: 10px;
   float: left;
 }
 .info {
+  float: left;
+  text-align: left;
+  padding: 20px;
   /*display: inline-block;*/
   /*width: 200px;*/
-  margin-top: 40px;
-  float: left;
-  margin-left: 40px;
-  text-align: center;
-  margin-bottom: 85px;
+  /*margin-top: 40px;*/
+  /*margin-left: 40px;*/
+  /*margin-bottom: 85px;*/
 }
 .info h2 {
-  font-size: 50px;
+  font-size: 38px;
 }
 .info p {
   padding-top: 20px;
@@ -122,6 +127,7 @@ footer {
   font-weight: 300;
 }
  #mapcanvas {
+  float: right;
   width: 50%;
   height: 350px;
   margin-left: 20px;
@@ -132,8 +138,8 @@ footer {
 }
 #aboutme{
   /*margin-top: 50px;*/
-  float: right;
-  width: 400px;
+  /*float: left;*/
+  width: 300px;
   margin-right: 40px;
   line-height: 150%;
   padding: 1em 1em;
@@ -156,6 +162,9 @@ footer {
   transform: scale(1);
 }
 
+a.fadeandscale_open {
+  color: black;
+}
 
 
 

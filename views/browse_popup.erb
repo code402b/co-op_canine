@@ -2,8 +2,9 @@
     <h1>Browse Users</h1>
     
     <% @users.each do |user| %>
-
-    <div class="user_profile" class="fadeandscale_open">
+    
+    <a class="fadeandscale_open" href="#fadeandscale">
+    <div class="user_profile">
       
       <div class="image_wrapper">
         <img class="thumb" src=<%=user["user_img"]%>>
@@ -22,7 +23,8 @@
         </ul>
       </div>
     </div>  <!-- closes .user_profile -->
-    
+    </a>
+
     <div id="fadeandscale" class="profile">
       <div class="info">
         <h2><%=user["username"]%></h2>
@@ -36,18 +38,17 @@
         <p><span>Dog Preference: </span> <%= user["dog_pref"] %></p>
       </div><!-- end div .info -->
 
-      <div id="everything">
-        <img src=<%= user["user_img"] %>>
-        <div id="aboutme">
-          <h2>About Me:</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div><!-- div #aboutme -->
-   
-        <div id="mapcanvas">
-          <iframe width="350" height="350" frameborder="0" src=<%="https://www.google.com/maps/embed/v1/place?q=#{user["zipcode"]}&key=AIzaSyAkt_wksosHgKyw-1zEMkHEguPP47mEWPA" %>></iframe>
-        </div><!-- end div #mapcanvas -->
-      </div>
+      <img src=<%= user["user_img"] %>>
+      
+      <div id="aboutme">
+        <h2>About Me:</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+      </div><!-- div #aboutme -->
+ 
+      <div id="mapcanvas">
+        <iframe width="350" height="350" frameborder="0" src=<%="https://www.google.com/maps/embed/v1/place?q=#{user["zipcode"]}&key=AIzaSyAkt_wksosHgKyw-1zEMkHEguPP47mEWPA" %>></iframe>
+      </div><!-- end div #mapcanvas -->
       <br clear="all">
     </div><!-- end #profile -->
 
