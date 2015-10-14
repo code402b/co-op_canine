@@ -78,5 +78,5 @@ get '/testimonial' do
 end
 
 
-# MERGE CONFLICT
+
 #second line of merge conflict
